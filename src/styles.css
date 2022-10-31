@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+}
+
+.toggle-container {
+  display: flex;
+  width: 200px;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle {
+  visibility: hidden;
+}
+
+.toggle-label {
+  background-color: rgb(201, 201, 201);
+  width: 60px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 30px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.ball {
+  width: 30px;
+  height: 100%;
+  border-radius: 50%;
+  background-color: ghostwhite;
+  transition: transform 200ms linear;
+}
+
+.toggle:checked + .toggle-label {
+  background-color: rgb(118, 13, 238);
+}
